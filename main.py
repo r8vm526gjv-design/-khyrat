@@ -12,7 +12,8 @@ from aiogram.filters import CommandStart, CommandObject
 from aiogram.types import InlineKeyboardMarkup, InlineKeyboardButton, WebAppInfo
 
 # ==================== البيانات المثبتة ====================
-BOT_TOKEN = "8954423162:AAHSAyR39EyIVtz0WatixCS5tz1mNeEpcqM"
+ BOT_TOKEN = os.getenv("BOT_TOKEN")
+
 ADMIN_ID = 155765606  # محمد غني عبد النبي
 APP_URL = os.getenv("APP_URL", "http://localhost:8000")  # ضع رابط الاستضافة هنا
 # ==========================================================
